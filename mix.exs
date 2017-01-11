@@ -18,7 +18,8 @@ defmodule Distillery.Mixfile do
 
   defp deps do
     [{:ex_doc, "~> 0.13", only: [:dev]},
-     {:excoveralls, "~> 0.5", only: [:dev, :test]},
+     {:excoveralls, "~> 0.6", only: [:dev, :test]},
+     {:credo, ">= 0.6.0-rc1", only: [:dev]},
      {:dialyze, "~> 0.2", only: [:dev]}]
   end
 
